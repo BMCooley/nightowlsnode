@@ -1,0 +1,12 @@
+authorizationCode=
+databaseOptions=
+databaseURL=
+GOOGLE_API_KEY=
+myNumber=
+PAPERTRAIL_API_TOKEN=
+sid=
+twilioNumber=
+secretsecret=
+
+
+create a .env file with the above lines filled with the approriate strings

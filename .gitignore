@@ -1,3 +1,4 @@
 node_modules/
 private/
 public/app.bundle.js
+.env

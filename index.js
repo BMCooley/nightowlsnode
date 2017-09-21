@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+  console.log('starting in dev mode');
+}
 const express = require('express');
 const path = require('path');
 const morgan = require('morgan');
@@ -22,7 +26,7 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(session({
-  secret: 'MrButtonPHDnotMDmaybeDRnotSure',
+  secret: process.env.secretsecret,
   store: new SequelizeStore({
     db,
     extendDefaultFields,
